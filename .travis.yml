@@ -29,6 +29,7 @@ matrix:
 
 before_script:
   - touch /tmp/oodb.db
+  - service mysqld start
   - mysql -e 'create database oodb;'
   - psql template1 -c 'CREATE EXTENSION "uuid-ossp";' -U postgres
   - psql -c 'create database oodb;' -U postgres
