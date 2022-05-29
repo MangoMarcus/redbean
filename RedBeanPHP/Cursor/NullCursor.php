@@ -35,7 +35,6 @@ class NullCursor implements Cursor
 	 */
 	public function reset()
 	{
-		return NULL;
 	}
 
 	/**
@@ -43,6 +42,5 @@ class NullCursor implements Cursor
 	 */
 	public function close()
 	{
-		return NULL;
 	}
 }

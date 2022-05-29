@@ -229,7 +229,8 @@ class Debug extends RDefault implements Logger
 		}
 
 		if ( !is_array( $bindings ) ) {
-			return $this->output( $sql );
+			$this->output( $sql );
+			return;
 		}
 
 		$newSql = $this->normalizeSlots( $sql );

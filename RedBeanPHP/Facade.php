@@ -2097,7 +2097,7 @@ class Facade
 	 */
 	public static function nuke()
 	{
-		return self::wipeAll( TRUE );
+		self::wipeAll( TRUE );
 	}
 
 	/**
@@ -3360,7 +3360,7 @@ class Facade
 	 * @return void
 	 */
 	public static function useFeatureSet( $label ) {
-		return Feature::feature($label);
+		Feature::feature($label);
 	}
 
 	/**
