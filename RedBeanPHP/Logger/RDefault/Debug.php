@@ -4,7 +4,6 @@ namespace RedBeanPHP\Logger\RDefault;
 
 use RedBeanPHP\Logger as Logger;
 use RedBeanPHP\Logger\RDefault as RDefault;
-use RedBeanPHP\RedException as RedException;
 
 /**
  * Debug logger.

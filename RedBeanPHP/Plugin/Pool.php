@@ -3,7 +3,6 @@
 namespace RedBeanPHP\Plugin;
 
 use RedBeanPHP\ToolBox;
-use RedBeanPHP\OODBBean;
 use RedBeanPHP\OODB;
 use RedBeanPHP\BeanHelper;
 use RedBeanPHP\R;

@@ -3,9 +3,7 @@
 namespace RedBeanPHP\BeanHelper;
 
 use RedBeanPHP\BeanHelper as BeanHelper;
-use RedBeanPHP\Facade as Facade;
 use RedBeanPHP\OODBBean as OODBBean;
-use RedBeanPHP\SimpleModelHelper as SimpleModelHelper;
 use RedBeanPHP\BeanHelper\SimpleFacadeBeanHelper as SimpleFacadeBeanHelper;
 
 /**

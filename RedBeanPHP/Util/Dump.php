@@ -2,7 +2,6 @@
 
 namespace RedBeanPHP\Util;
 
-use RedBeanPHP\OODB as OODB;
 use RedBeanPHP\OODBBean as OODBBean;
 
 /**

@@ -2,8 +2,6 @@
 
 namespace RedBeanPHP\Util;
 
-use RedBeanPHP\OODB as OODB;
-use RedBeanPHP\OODBBean as OODBBean;
 use RedBeanPHP\RedException as RedException;
 use RedBeanPHP\Adapter as Adapter;
 

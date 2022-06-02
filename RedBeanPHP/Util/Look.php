@@ -2,10 +2,7 @@
 
 namespace RedBeanPHP\Util;
 
-use RedBeanPHP\OODB as OODB;
-use RedBeanPHP\OODBBean as OODBBean;
 use RedBeanPHP\ToolBox as ToolBox;
-use RedBeanPHP\Finder;
 
 /**
  * Look Utility
@@ -57,7 +54,7 @@ class Look
 	 *   'strtoupper',
 	 *   "\n"
 	 * );
-	 *</code>
+	 * </code>
 	 *
 	 * The example above creates an HTML fragment like this:
 	 *

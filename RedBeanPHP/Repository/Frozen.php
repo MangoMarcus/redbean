@@ -3,9 +3,7 @@
 namespace RedBeanPHP\Repository;
 
 use RedBeanPHP\OODBBean as OODBBean;
-use RedBeanPHP\QueryWriter as QueryWriter;
 use RedBeanPHP\RedException as RedException;
-use RedBeanPHP\BeanHelper as BeanHelper;
 use RedBeanPHP\RedException\SQL as SQLException;
 use RedBeanPHP\Repository as Repository;
 

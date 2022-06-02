@@ -2,7 +2,6 @@
 
 namespace RedBeanPHP\Util;
 
-use RedBeanPHP\OODB as OODB;
 use RedBeanPHP\OODBBean as OODBBean;
 use RedBeanPHP\ToolBox as ToolBox;
 use RedBeanPHP\Finder;

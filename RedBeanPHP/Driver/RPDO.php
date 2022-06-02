@@ -8,7 +8,6 @@ use RedBeanPHP\QueryWriter\AQueryWriter as AQueryWriter;
 use RedBeanPHP\RedException as RedException;
 use RedBeanPHP\RedException\SQL as SQL;
 use RedBeanPHP\Logger\RDefault as RDefault;
-use RedBeanPHP\PDOCompatible as PDOCompatible;
 use RedBeanPHP\Cursor\PDOCursor as PDOCursor;
 
 /**
