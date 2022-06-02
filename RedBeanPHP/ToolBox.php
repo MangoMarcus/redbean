@@ -2,10 +2,7 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\OODB as OODB;
-use RedBeanPHP\QueryWriter as QueryWriter;
 use RedBeanPHP\Adapter\DBAdapter as DBAdapter;
-use RedBeanPHP\Adapter as Adapter;
 
 /**
  * ToolBox.

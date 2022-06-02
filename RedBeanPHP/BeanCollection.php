@@ -2,9 +2,6 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\Cursor as Cursor;
-use RedBeanPHP\Repository as Repository;
-
 /**
  * BeanCollection.
  *

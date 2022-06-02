@@ -2,8 +2,6 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\SimpleModel as SimpleModel;
-
 /**
  * TypedModel
  * Just like the standard SimpleModel but allows for

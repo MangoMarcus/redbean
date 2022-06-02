@@ -2,8 +2,7 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\ToolBox as ToolBox;
-use RedBeanPHP\OODBBean as OODBBean;
+use RedBeanPHP\SimpleModel as SimpleModel;
 
 /**
  * Bean Helper Interface.

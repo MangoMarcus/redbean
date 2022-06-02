@@ -4,7 +4,6 @@ namespace RedBeanPHP\BeanHelper;
 
 use RedBeanPHP\BeanHelper as BeanHelper;
 use RedBeanPHP\OODBBean as OODBBean;
-use RedBeanPHP\BeanHelper\SimpleFacadeBeanHelper as SimpleFacadeBeanHelper;
 
 /**
  * Dynamic Bean Helper.

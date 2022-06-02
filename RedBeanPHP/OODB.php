@@ -2,11 +2,7 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\Adapter\DBAdapter as DBAdapter;
-use RedBeanPHP\QueryWriter as QueryWriter;
-use RedBeanPHP\BeanHelper as BeanHelper;
 use RedBeanPHP\QueryWriter\AQueryWriter as AQueryWriter;
-use RedBeanPHP\Repository as Repository;
 use RedBeanPHP\Repository\Fluid as FluidRepo;
 use RedBeanPHP\Repository\Frozen as FrozenRepo;
 

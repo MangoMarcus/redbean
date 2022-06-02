@@ -2,9 +2,6 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\ToolBox as ToolBox;
-use RedBeanPHP\OODBBean as OODBBean;
-
 /**
  * Label Maker.
  * Makes so-called label beans.

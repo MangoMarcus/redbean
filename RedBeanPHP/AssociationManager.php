@@ -3,8 +3,6 @@
 namespace RedBeanPHP;
 
 use RedBeanPHP\Adapter\DBAdapter as DBAdapter;
-use RedBeanPHP\QueryWriter as QueryWriter;
-use RedBeanPHP\RedException as RedException;
 use RedBeanPHP\RedException\SQL as SQLException;
 
 /**

@@ -2,10 +2,6 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\Observer as Observer;
-use RedBeanPHP\OODBBean as OODBBean;
-use RedBeanPHP\Observable as Observable;
-
 /**
  * RedBean Model Helper.
  *

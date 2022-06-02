@@ -3,11 +3,8 @@
 namespace RedBeanPHP;
 
 use RedBeanPHP\Adapter\DBAdapter as DBAdapter;
-use RedBeanPHP\QueryWriter as QueryWriter;
-use RedBeanPHP\BeanHelper as BeanHelper;
 use RedBeanPHP\RedException\SQL as SQLException;
 use RedBeanPHP\QueryWriter\AQueryWriter as AQueryWriter;
-use RedBeanPHP\Cursor as Cursor;
 use RedBeanPHP\Cursor\NullCursor as NullCursor;
 
 /**

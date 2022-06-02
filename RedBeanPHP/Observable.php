@@ -2,8 +2,6 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\Observer as Observer;
-
 /**
  * Observable
  * Base class for Observables

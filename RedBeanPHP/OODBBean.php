@@ -3,8 +3,6 @@
 namespace RedBeanPHP;
 
 use RedBeanPHP\QueryWriter\AQueryWriter as AQueryWriter;
-use RedBeanPHP\BeanHelper as BeanHelper;
-use RedBeanPHP\RedException as RedException;
 
 /**
  * PHP 5.3 compatibility

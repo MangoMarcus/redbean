@@ -2,15 +2,11 @@
 
 namespace RedBeanPHP;
 
-use RedBeanPHP\QueryWriter as QueryWriter;
 use RedBeanPHP\Adapter\DBAdapter as DBAdapter;
 use RedBeanPHP\RedException\SQL as SQLException;
-use RedBeanPHP\Logger as Logger;
 use RedBeanPHP\Logger\RDefault as RDefault;
 use RedBeanPHP\Logger\RDefault\Debug as Debug;
-use RedBeanPHP\Adapter as Adapter;
 use RedBeanPHP\QueryWriter\AQueryWriter as AQueryWriter;
-use RedBeanPHP\RedException as RedException;
 use RedBeanPHP\BeanHelper\SimpleFacadeBeanHelper as SimpleFacadeBeanHelper;
 use RedBeanPHP\Driver\RPDO as RPDO;
 use RedBeanPHP\Util\MultiLoader as MultiLoader;
