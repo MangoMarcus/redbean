@@ -16,7 +16,6 @@ namespace RedBeanPHP\QueryWriter;
 
 use RedBeanPHP\QueryWriter\AQueryWriter as AQueryWriter;
 use RedBeanPHP\QueryWriter as QueryWriter;
-use RedBeanPHP\Adapter\DBAdapter as DBAdapter;
 use RedBeanPHP\Adapter as Adapter;
 use RedBeanPHP\RedException\SQL as SQLException;
 
@@ -36,7 +35,7 @@ use RedBeanPHP\RedException\SQL as SQLException;
  * This source file is subject to the BSD/GPLv2 License that is bundled
  * with this source code in the file license.txt.
  */
-class Firebird extends AQueryWriter implements QueryWriter
+class Firebird extends AQueryWriter
 {
 	/**
 	 * Data types
@@ -44,11 +43,6 @@ class Firebird extends AQueryWriter implements QueryWriter
 	const C_DATATYPE_INTEGER           = 2;
 	const C_DATATYPE_FLOAT             = 3;
 	const C_DATATYPE_TEXT              = 5;
-
-	/**
-	 * @var DBAdapter
-	 */
-	protected $adapter;
 
 	/**
 	 * @var string

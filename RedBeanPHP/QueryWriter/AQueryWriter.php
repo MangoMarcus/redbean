@@ -24,7 +24,7 @@ use RedBeanPHP\RedException\SQL as SQLException;
  * This source file is subject to the BSD/GPLv2 License that is bundled
  * with this source code in the file license.txt.
  */
-abstract class AQueryWriter
+abstract class AQueryWriter implements QueryWriter
 {
 	/**
 	 * Constant: Select Snippet 'FOR UPDATE'

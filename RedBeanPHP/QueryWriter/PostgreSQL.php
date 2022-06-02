@@ -4,7 +4,6 @@ namespace RedBeanPHP\QueryWriter;
 
 use RedBeanPHP\QueryWriter\AQueryWriter as AQueryWriter;
 use RedBeanPHP\QueryWriter as QueryWriter;
-use RedBeanPHP\Adapter\DBAdapter as DBAdapter;
 use RedBeanPHP\Adapter as Adapter;
 use RedBeanPHP\RedException\SQL as SQLException;
 
@@ -22,7 +21,7 @@ use RedBeanPHP\RedException\SQL as SQLException;
  * This source file is subject to the BSD/GPLv2 License that is bundled
  * with this source code in the file license.txt.
  */
-class PostgreSQL extends AQueryWriter implements QueryWriter
+class PostgreSQL extends AQueryWriter
 {
 	/**
 	 * Data types
@@ -42,11 +41,6 @@ class PostgreSQL extends AQueryWriter implements QueryWriter
 	const C_DATATYPE_SPECIAL_MONEY2   = 95; //Numbers only money, i.e. fixed point numeric
 	const C_DATATYPE_SPECIAL_JSON     = 96; //JSON support (only manual)
 	const C_DATATYPE_SPECIFIED        = 99;
-
-	/**
-	 * @var DBAdapter
-	 */
-	protected $adapter;
 
 	/**
 	 * @var string
