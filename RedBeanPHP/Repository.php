@@ -668,7 +668,7 @@ abstract class Repository
 	 *
 	 * @param OODBBean|SimpleModel $bean bean you want to remove from database
 	 *
-	 * @return void
+	 * @return int
 	 */
 	public function trash( $bean )
 	{
@@ -686,7 +686,7 @@ abstract class Repository
 			}
 		}
 		try {
-			$deleted = $this->writer->deleteRecord( $bean->getMeta( 'type' ), array( 'id' => array( $bean->id ) ), NULL );
+			$deleted = $this->writer->deleteRecord( $bean->getMeta( 'type' ), array( 'id' => array( $bean->id ) ) );
 		} catch ( SQLException $exception ) {
 			$this->handleException( $exception );
 		}
