@@ -378,7 +378,6 @@ class MySQL extends AQueryWriter
 
 	/**
 	 * @see QueryWriter::addFK
-	 * @return bool
 	 */
 	public function addFK( $type, $targetType, $property, $targetProperty, $isDependent = FALSE )
 	{

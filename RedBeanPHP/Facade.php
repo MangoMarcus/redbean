@@ -180,6 +180,8 @@ class Facade
 	 * flag.
 	 *
 	 * @param boolean $hybrid
+	 *
+	 * @return bool
 	 */
 	public static function setAllowHybridMode( $hybrid )
 	{
@@ -446,6 +448,7 @@ class Facade
 	 * @param string  $username Username for database
 	 * @param string  $password Password for database
 	 * @param boolean $frozen   TRUE if you want to setup in frozen mode
+	 * @param array   $options
 	 *
 	 * @return ToolBox
 	 */
@@ -510,6 +513,7 @@ class Facade
 	 * switched and FALSE otherwise (for instance if you already using the specified database).
 	 *
 	 * @param  string $key Key of the database to select
+	 * @param  bool   $force
 	 *
 	 * @return boolean
 	 */
@@ -676,6 +680,8 @@ class Facade
 	 * certain types (i.e. tables) aren't touched.
 	 *
 	 * @param boolean|array $tf mode of operation (TRUE means frozen)
+	 *
+	 * @return void
 	 */
 	public static function freeze( $tf = TRUE )
 	{
@@ -2955,7 +2961,7 @@ class Facade
 	 * @param array    $onNotFoundDo task list to be considered on NOT finding the bean
 	 * @param OODBBean &$bean        reference to obtain the found bean
 	 *
-	 * @return mixed
+	 * @return bool|null
 	 */
 	public static function matchUp( $type, $sql, $bindings = array(), $onFoundDo = NULL, $onNotFoundDo = NULL, &$bean = NULL 	) {
 		$matchUp = new MatchUp( self::$toolbox );
@@ -3062,8 +3068,7 @@ class Facade
 	 * @param OODBBean|array $bean    reference beans
 	 * @param OODBBean|array $other   beans to compare
 	 * @param array          $filters names of properties of all beans to skip
-	 * @param string         $format  the format of the key, defaults to '%s.%s.%s'
-	 * @param string         $type    type/property of bean to use for key generation
+	 * @param string         $pattern the format of the key, defaults to '%s.%s.%s'
 	 *
 	 * @return array
 	 */
@@ -3115,7 +3120,6 @@ class Facade
 	 * Returns the toolbox associated with the specified key.
 	 *
 	 * @param string  $key     key to store toolbox instance under
-	 * @param ToolBox $toolbox toolbox to register
 	 *
 	 * @return ToolBox|NULL
 	 */
@@ -3185,6 +3189,8 @@ class Facade
 	 * @param OODBBean $bean     bean to find children of
 	 * @param string   $sql      optional SQL snippet
 	 * @param array    $bindings SQL snippet parameter bindings
+	 *
+	 * @return OODBBean[]
 	 */
 	public static function children( OODBBean $bean, $sql = NULL, $bindings = array() )
 	{
@@ -3218,6 +3224,8 @@ class Facade
 	 * @param string         $sql      optional SQL snippet
 	 * @param array          $bindings SQL snippet parameter bindings
 	 * @param string|boolean $select   select snippet to use (advanced, optional, see QueryWriter::queryRecursiveCommonTableExpression)
+	 *
+	 * @return int
 	 */
 	public static function countChildren( OODBBean $bean, $sql = NULL, $bindings = array(), $select = QueryWriter::C_CTE_SELECT_COUNT )
 	{
@@ -3251,6 +3259,8 @@ class Facade
 	 * @param string         $sql      optional SQL snippet
 	 * @param array          $bindings SQL snippet parameter bindings
 	 * @param string|boolean $select   select snippet to use (advanced, optional, see QueryWriter::queryRecursiveCommonTableExpression)
+	 *
+	 * @return int
 	 */
 	public static function countParents( OODBBean $bean, $sql = NULL, $bindings = array(), $select = QueryWriter::C_CTE_SELECT_COUNT )
 	{
@@ -3270,6 +3280,8 @@ class Facade
 	 * @param OODBBean $bean     bean to find parents of
 	 * @param string   $sql      optional SQL snippet
 	 * @param array    $bindings SQL snippet parameter bindings
+	 *
+	 * @return OODBBean[]
 	 */
 	public static function parents( OODBBean $bean, $sql = NULL, $bindings = array() )
 	{
