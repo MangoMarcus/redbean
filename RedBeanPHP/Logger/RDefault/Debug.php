@@ -2,7 +2,6 @@
 
 namespace RedBeanPHP\Logger\RDefault;
 
-use RedBeanPHP\Logger as Logger;
 use RedBeanPHP\Logger\RDefault as RDefault;
 
 /**
@@ -19,7 +18,7 @@ use RedBeanPHP\Logger\RDefault as RDefault;
  * This source file is subject to the BSD/GPLv2 License that is bundled
  * with this source code in the file license.txt.
  */
-class Debug extends RDefault implements Logger
+class Debug extends RDefault
 {
 	/**
 	 * @var integer

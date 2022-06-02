@@ -2,7 +2,6 @@
 
 namespace RedBeanPHP\BeanHelper;
 
-use RedBeanPHP\BeanHelper as BeanHelper;
 use RedBeanPHP\OODBBean as OODBBean;
 
 /**
@@ -20,7 +19,7 @@ use RedBeanPHP\OODBBean as OODBBean;
  * This source file is subject to the BSD/GPLv2 License that is bundled
  * with this source code in the file license.txt.
  */
-class DynamicBeanHelper extends SimpleFacadeBeanHelper implements BeanHelper
+class DynamicBeanHelper extends SimpleFacadeBeanHelper
 {
 	/**
 	 * Model prefix to be used for the current database connection.
