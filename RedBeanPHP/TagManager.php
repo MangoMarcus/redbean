@@ -63,7 +63,7 @@ class TagManager
 	 *
 	 * @param string $title title to search for
 	 *
-	 * @return OODBBean
+	 * @return OODBBean|NULL
 	 */
 	protected function findTagByTitle( $title )
 	{
