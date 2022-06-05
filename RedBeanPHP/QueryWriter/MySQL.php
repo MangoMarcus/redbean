@@ -354,7 +354,7 @@ class MySQL extends AQueryWriter
 						 ADD UNIQUE INDEX $name (" . implode( ',', $columns ) . ")";
 			$this->adapter->exec( $sql );
 		} catch ( SQLException $e ) {
-			//do nothing, dont use alter table ignore, this will delete duplicate records in 3-ways!
+			//do nothing, don't use alter table ignore, this will delete duplicate records in 3-ways!
 			return FALSE;
 		}
 		return TRUE;

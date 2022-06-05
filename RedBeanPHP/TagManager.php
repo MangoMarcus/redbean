@@ -58,7 +58,7 @@ class TagManager
 	}
 
 	/**
-	 * Finds a tag bean by it's title.
+	 * Finds a tag bean by its title.
 	 * Internal method.
 	 *
 	 * @param string $title title to search for
@@ -94,7 +94,7 @@ class TagManager
 	}
 
 	/**
-	 * Tests whether a bean has been associated with one ore more
+	 * Tests whether a bean has been associated with one or more
 	 * of the listed tags. If the third parameter is TRUE this method
 	 * will return TRUE only if all tags that have been specified are indeed
 	 * associated with the given bean, otherwise FALSE.
