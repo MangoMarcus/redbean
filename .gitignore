@@ -27,3 +27,5 @@ Thumbs.db
 /rb-postgres.php
 /rb-sqlite.php
 build/
+
+vendor/*
